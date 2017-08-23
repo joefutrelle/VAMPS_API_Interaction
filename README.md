@@ -22,9 +22,12 @@ All functions (except get_image) return a JSON object so you can parse and displ
 **To Use:**  
 * Clone this repository using git
 * Create the conda environment and kernel using `conda env create -f environment.yml`
+* Activate the environment, following Anaconda's instructions
 * Run Jupyter notebook by typing "jupyter notebook" in terminal  
-* The folder/notebook will now be available on the Jupyter dashboard   
-* Follow further instructions in "using_VAMPS_API_for_MVCO_datasets.ipynb"  
+* The folder/notebook will now be available on the Jupyter dashboard 
+* Open the notebook "using_VAMPS_API_for_MVCO_datasets.ipynb"
+* Make sure the right conda environment is selected as the kernel by selecting "Change kernel" on the "Kernel" menu, and select "conda env:vamps_api" 
+* Follow further instructions in the notebook
 
 ### Get Dataset IDs:
 > You might want dataset_ids if you want an image or data comprising
