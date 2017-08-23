@@ -4,4 +4,6 @@ dependencies:
   - requests
   - beautifulsoup4
   - lxml
+  - ipython-notebook
+  - nb_conda
   - ipykernel
