@@ -16,9 +16,12 @@ Once logged in you can get metadata, dataset_ids, and search for projects by nam
     
 All functions (except get_image) return a JSON object so you can parse and display the data from your scripts. 
 
+**Prerequisites**:
+* Anaconda
 
 **To Use:**  
-* Download folder and unzip locally   
+* Clone this repository using git
+* Create the conda environment and kernel using `conda env create -f environment.yml`
 * Run Jupyter notebook by typing "jupyter notebook" in terminal  
 * The folder/notebook will now be available on the Jupyter dashboard   
 * Follow further instructions in "using_VAMPS_API_for_MVCO_datasets.ipynb"  
