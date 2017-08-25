@@ -1,9 +1,6 @@
-VAMPS API Interaction  
-=========
-The VAMPS-API is a newly written set of functions that allow directly querying  the VAMPS database for project data and images that go directly to your local drive.  
-These functions still require logging in but the web interface GUI is not used or needed for this.   
-Once logged in you can get metadata, dataset_ids, and search for projects by name or within a geographic range.
---------------
+<h1>VAMPS API Interaction</h1>  
+
+The VAMPS-API is a newly written set of functions that allow directly querying the VAMPS database for project data and images that go directly to your local drive. These functions still require logging in but the web interface GUI is not used or needed for this. Once logged in you can get metadata, dataset_ids, and search for projects by name or within a geographic range.
 
 * Get all metadata for a project.
 * Search for metadata by name (returns a project list)
@@ -23,10 +20,10 @@ All functions (except get_image) return a JSON object so you can parse and displ
 * Clone this repository using git
 * Create the conda environment and kernel using `conda env create -f environment.yml`
 * Activate the environment, following Anaconda's instructions
-* Run Jupyter notebook by typing "jupyter notebook" in terminal  
+* Run Jupyter notebook by typing `jupyter notebook` in terminal. If you encounter the error `IOPub data rate exceeded` when running the notebook, then exit out of jupyter in the terminal using Ctrl-C and then run `jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000000` instead
 * The folder/notebook will now be available on the Jupyter dashboard 
-* Open the notebook "using_VAMPS_API_for_MVCO_datasets.ipynb"
-* Make sure the right conda environment is selected as the kernel by selecting "Change kernel" on the "Kernel" menu, and select "conda env:vamps_api" 
+* Open the notebook `using_VAMPS_API_for_MVCO_datasets.ipynb`
+* Make sure the right conda environment is selected as the kernel by selecting "Change kernel" on the "Kernel" menu, and select `conda env:vamps_api`
 * Follow further instructions in the notebook
 
 ### Get Dataset IDs:
