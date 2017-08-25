@@ -1,15 +1,6 @@
 <h1>VAMPS API Interaction</h1>  
 
 The VAMPS-API is a newly written set of functions that allow directly querying the VAMPS database for project data and images that go directly to your local drive. These functions still require logging in but the web interface GUI is not used or needed for this. Once logged in you can get metadata, dataset_ids, and search for projects by name or within a geographic range.
-
-* Get all metadata for a project.
-* Search for metadata by name (returns a project list)
-* Search for projects in a geographic location (returns a project list)
-* Search for projects by name or substring (returns a project list)
-* Get project information (owner, public_status, title, description)
-* Get images (The same as on the visualization page from the GUI)
-    Including: distance_heatmap, piecharts, barcharts, counts_table, metadata_table 
-      alpha_diversity_table, dendrogram, frequency_heatmap  
     
 All functions (except get_image) return a JSON object so you can parse and display the data from your scripts. 
 
@@ -25,6 +16,17 @@ All functions (except get_image) return a JSON object so you can parse and displ
 * Open the notebook `using_VAMPS_API_for_MVCO_datasets.ipynb`
 * Make sure the right conda environment is selected as the kernel by selecting "Change kernel" on the "Kernel" menu, and select `conda env:vamps_api`
 * Follow further instructions in the notebook
+
+**API Functions**
+
+* Get all metadata for a project.
+* Search for metadata by name (returns a project list)
+* Search for projects in a geographic location (returns a project list)
+* Search for projects by name or substring (returns a project list)
+* Get project information (owner, public_status, title, description)
+* Get images (The same as on the visualization page from the GUI)
+    Including: distance_heatmap, piecharts, barcharts, counts_table, metadata_table 
+      alpha_diversity_table, dendrogram, frequency_heatmap
 
 ### Get Dataset IDs:
 > You might want dataset_ids if you want an image or data comprising
